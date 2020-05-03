@@ -203,6 +203,7 @@ define(['jquery', 'zimArchiveLoader', 'uiUtil', 'settingsStore','abstractFilesys
     $('#prefix').on('blur', function() {
         if (!searchArticlesFocused) {
             params.cancelSearch = true;
+            $("#searchingArticles").hide();
             $('#articleListWithHeader').hide();
         }
     });
